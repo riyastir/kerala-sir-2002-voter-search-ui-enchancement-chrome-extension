@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Kerala SIR 2002 Voter Search: Searchable Dropdowns (EN→ML)",
+  "version": "1.0.0",
+  "description": "Enhances custom-dropdowns to support Malayalam and English phonetic search on ceo.kerala.gov.in/voter-search.",
+  "author": "Mohamed Riyas K.P",
+  "developer": {
+    "name": "Mohamed Riyas K.P",
+    "url": "https://github.com/riyastir"
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.ceo.kerala.gov.in/voter-search*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
